@@ -4,7 +4,7 @@ import { SiFreecodecamp } from "react-icons/si"
 export function ProfilIcon() {
 
     return <img className="w-[100px] h-[100px]"
-        src="/memoji.png" alt="profil" />
+        src="/Memoji.png" alt="profil" />
 }
 
 

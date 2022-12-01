@@ -1,4 +1,5 @@
 import { AiFillMessage } from "react-icons/ai"
+import { ExternalDivisionLink } from "../utils/next/anchor"
 import { ColoredTextButton } from "./button"
 
 export function Description() {
@@ -13,8 +14,10 @@ export function Description() {
             </span>
         </div>
         <div className="h-4" />
-        <ColoredTextButton className="w-full" icon={AiFillMessage}>
-            Send me a message
-        </ColoredTextButton>
+        <ExternalDivisionLink href="mailto:victorpiamiaspro@outlook.fr?subject=Let's get to know each other">
+            <ColoredTextButton className="w-full" icon={AiFillMessage}>
+                Send me a message
+            </ColoredTextButton>
+        </ExternalDivisionLink>
     </div>
 }

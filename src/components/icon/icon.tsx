@@ -25,3 +25,33 @@ export function FreelanceIcon() {
     return <img className="w-[100px] h-[100px]"
         src="/freelance.png" alt="freelance" />
 }
+
+export function LunarIcon() {
+
+    return <img className="w-[100px] h-[100px]"
+        src="/lunar.svg" alt="lunar" />
+}
+
+export function ReachIcon() {
+
+    return <img className="w-[100px] h-[100px]"
+        src="/reach.png" alt="reach" />
+}
+
+export function PongIcon() {
+
+    return <img className="w-[100px] h-[100px]"
+        src="/pong.png" alt="pong" />
+}
+
+export function SchoolIcon() {
+
+    return <img className="w-[100px] h-[100px]"
+        src="/42.png" alt="42" />
+}
+
+export function MansIcon() {
+
+    return <img className="w-[100px] h-[100px]"
+        src="/mans.png" alt="mans" />
+}

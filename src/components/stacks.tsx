@@ -1,5 +1,5 @@
 import { useMemo } from "react"
-import { FiGithub } from "react-icons/fi"
+import { SiC, SiCss3, SiDocker, SiEthereum, SiFigma, SiGraphql, SiHtml5, SiJavascript, SiNodedotjs, SiReact, SiRust, SiSolidity, SiTailwindcss, SiTypescript, SiWebassembly } from "react-icons/si"
 import { useBoolean } from "../utils/react/boolean"
 import { IconProps } from "../utils/react/icon"
 import { OppositeTextButtonDeploy } from "./button"
@@ -16,21 +16,21 @@ export function Stack() {
             </OppositeTextButtonDeploy>
             {deploy.current === true && <>
                 <div className="h-2" />
-                <Skill icon={FiGithub} label={"JavaScript"} level />
-                <Skill icon={FiGithub} label={"TypeScript"} level />
-                <Skill icon={FiGithub} label={"React js"} level />
-                <Skill icon={FiGithub} label={"HTML"} level />
-                <Skill icon={FiGithub} label={"CSS"} level />
-                <Skill icon={FiGithub} label={"Tailwind CSS"} level />
-                <Skill icon={FiGithub} label={"C / C++"} level />
-                <Skill icon={FiGithub} label={"Node js"} level />
-                <Skill icon={FiGithub} label={"Ethereum"} level />
-                <Skill icon={FiGithub} label={"The Graph"} level />
-                <Skill icon={FiGithub} label={"Solidity"} />
-                <Skill icon={FiGithub} label={"Rust"} />
-                <Skill icon={FiGithub} label={"Web Assembly"} />
-                <Skill icon={FiGithub} label={"Figma"} />
-                <Skill icon={FiGithub} label={"Docker"} />
+                <Tech icon={SiJavascript} label={"JavaScript"} level />
+                <Tech icon={SiTypescript} label={"TypeScript"} level />
+                <Tech icon={SiReact} label={"React js"} level />
+                <Tech icon={SiHtml5} label={"HTML"} level />
+                <Tech icon={SiCss3} label={"CSS"} level />
+                <Tech icon={SiTailwindcss} label={"Tailwind CSS"} level />
+                <Tech icon={SiC} label={"C / C++"} level />
+                <Tech icon={SiNodedotjs} label={"Node js"} level />
+                <Tech icon={SiEthereum} label={"Ethereum"} level />
+                <Tech icon={SiGraphql} label={"GraphQl"} level />
+                <Tech icon={SiSolidity} label={"Solidity"} />
+                <Tech icon={SiRust} label={"Rust"} />
+                <Tech icon={SiWebassembly} label={"Web Assembly"} />
+                <Tech icon={SiFigma} label={"Figma"} />
+                <Tech icon={SiDocker} label={"Docker"} />
                 <div className="h-2" />
             </>}
         </div>
@@ -49,7 +49,7 @@ export function Stack() {
     </div>
 }
 
-export function Skill(props: IconProps & { label: string, level?: boolean }) {
+export function Tech(props: IconProps & { label: string, level?: boolean }) {
 
     const { icon: Icon, label, level } = props
 

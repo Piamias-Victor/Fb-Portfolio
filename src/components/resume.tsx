@@ -1,14 +1,16 @@
 import { AiOutlinePlus } from "react-icons/ai"
-import { FaCodepen, FaSuitcase } from "react-icons/fa"
+import { FaCodepen, FaEthereum, FaMedal, FaSuitcase } from "react-icons/fa"
 import { FiGithub } from "react-icons/fi"
+import { HiOutlineDesktopComputer } from "react-icons/hi"
 import { MdSchool } from "react-icons/md"
-import { TbWorld } from "react-icons/tb"
+import { SiFreecodecamp } from "react-icons/si"
+import { TbFileCertificate, TbWorld } from "react-icons/tb"
 import { Icon, IconProps } from "../utils/react/icon"
 import { useString } from "../utils/react/string"
 import { NavButton, OppositeTextButtonRounded } from "./button"
-import { AztecIcon, BrumeIcon, FreelanceIcon, ProfilIcon } from "./icon/icon"
+import { AztecIcon, BrumeIcon, FreelanceIcon, LunarIcon, MansIcon, PongIcon, ProfilIcon, ReachIcon, SchoolIcon } from "./icon/icon"
 
-export function Experience(props: IconProps & { label: string, link: string, buttonIcon: Icon }) {
+export function Card(props: IconProps & { label: string, link: string, buttonIcon: Icon }) {
 
     const { icon: Icon, label, link, buttonIcon: ButtonIcon } = props
 
@@ -41,10 +43,39 @@ export function Resume() {
         </div>
         <div className="w-full h-[2px] bg-default" />
         <div className="flex flex-center gap-4 px-4 py-2">
-            <Experience icon={ProfilIcon} buttonIcon={AiOutlinePlus} label={"Add one by contacting me!"} link={""} />
-            <Experience icon={AztecIcon} buttonIcon={TbWorld} label={"Front-End developer"} link={""} />
-            <Experience icon={BrumeIcon} buttonIcon={FiGithub} label={"Brume Wallet Co-funder"} link={""} />
-            <Experience icon={FreelanceIcon} buttonIcon={FiGithub} label={"Developer freelance"} link={""} />
+            {section.current === "Experiences" && <Experiences />}
+            {section.current === "Projects" && <Projects />}
+            {section.current === "Educations" && <Educations />}
         </div>
     </div>
+}
+
+export function Experiences() {
+
+    return <>
+        <Card icon={ProfilIcon} buttonIcon={AiOutlinePlus} label={"Add one by contacting me!"} link={""} />
+        <Card icon={AztecIcon} buttonIcon={TbWorld} label={"Front-End developer"} link={""} />
+        <Card icon={BrumeIcon} buttonIcon={FiGithub} label={"Brume Wallet Co-funder"} link={""} />
+        <Card icon={FreelanceIcon} buttonIcon={FiGithub} label={"Developer freelance"} link={""} />
+    </>
+}
+
+export function Projects() {
+
+    return <>
+        <Card icon={LunarIcon} buttonIcon={FaMedal} label={"Lunar Wallet, ETHBrno"} link={""} />
+        <Card icon={ReachIcon} buttonIcon={FiGithub} label={"Reach3, NFT degree"} link={""} />
+        <Card icon={PongIcon} buttonIcon={FiGithub} label={"Pong.io, online Pong game"} link={""} />
+        <Card icon={SchoolIcon} buttonIcon={FiGithub} label={"42, Multiple projects"} link={""} />
+    </>
+}
+
+export function Educations() {
+
+    return <>
+        <Card icon={SchoolIcon} buttonIcon={HiOutlineDesktopComputer} label={"42 School"} link={""} />
+        <Card icon={FaEthereum} buttonIcon={FaEthereum} label={"Crypto certification"} link={""} />
+        <Card icon={SiFreecodecamp} buttonIcon={SiFreecodecamp} label={"Free Code Camp"} link={""} />
+        <Card icon={MansIcon} buttonIcon={TbFileCertificate} label={"Bachelor's in Sales"} link={""} />
+    </>
 }

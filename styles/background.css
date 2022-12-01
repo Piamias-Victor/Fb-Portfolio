@@ -3,20 +3,24 @@
     @apply bg-white;
   }
 
+  .bg-opposite {
+    @apply bg-black;
+  }
+
   .bg-contrast {
     @apply bg-zinc-400;
   }
 
   .bg-component {
-    @apply bg-white bg-ahover;
+    @apply bg-zinc-200 bg-ahover;
   }
 
   .bg-solid {
-    @apply bg-zinc-600 ahover:bg-zinc-800;
+    @apply bg-zinc-600 hover:bg-zinc-800;
   }
 
   .bg-ahover {
-    @apply ahover:bg-zinc-200;
+    @apply hover:bg-zinc-400;
   }
 
   .bg-backdrop {

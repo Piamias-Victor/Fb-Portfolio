@@ -1,5 +1,5 @@
 @layer utilities {
   .border-default {
-    @apply border-zinc-400 ahover:border-zinc-600;
+    @apply border-zinc-400 hover:border-zinc-600;
   }
 }

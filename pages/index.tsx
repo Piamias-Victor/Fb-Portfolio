@@ -1,6 +1,16 @@
 
 export default function Home() {
   return <>
-    <span className="text-blue-400">Starter Pack</span>
+    <div className="p-md bg-opposite text-default w-full">
+      Starter Pack
+    </div>
+    <div className="h-2" />
+    <div className="p-md border border-default">
+      Border
+    </div>
+    <div className="h-2" />
+    <div className="p-md border border-default bg-component">
+      BG
+    </div>
   </>
 }

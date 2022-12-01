@@ -2,7 +2,13 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import "./padding.css";
+@import "./animation.css";
 @import "./background.css";
+@import "./text.css";
+@import "./icons.css";
+@import "./border.css";
+@import "./flex.css";
 
 html,
 body,
@@ -12,4 +18,5 @@ body,
 }
 
 body {
+  @apply bg-default text-opposite;
 }

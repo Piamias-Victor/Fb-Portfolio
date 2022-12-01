@@ -17,11 +17,11 @@ export function Contacts() {
             </OppositeTextButtonDeploy>
             {deploy.current === true && <>
                 <div className="h-2" />
-                <Contact icon={SiGithub} label={"Github"} link={""} />
-                <Contact icon={SiLinkedin} label={"Linkedin"} link={""} />
-                <Contact icon={SiTelegram} label={"Telegram"} link={""} />
-                <Contact icon={BsMailbox2} label={"Mail"} link={""} />
-                <Contact icon={SiTwitter} label={"Twitter"} link={""} />
+                <Contact icon={SiGithub} label={"Github"} link={"https://github.com/Piamias-Victor"} />
+                <Contact icon={SiLinkedin} label={"Linkedin"} link={"https://www.linkedin.com/in/victor-piamias/"} />
+                <Contact icon={SiTelegram} label={"Telegram"} link={"https://t.me/piamiasVictor"} />
+                <Contact icon={BsMailbox2} label={"Mail"} link={"mailto:victorpiamiaspro@outlook.fr?subject=Let's get to know each other"} />
+                <Contact icon={SiTwitter} label={"Twitter"} link={"https://twitter.com/Heliatr0p"} />
                 <div className="h-2" />
             </>}
         </div>

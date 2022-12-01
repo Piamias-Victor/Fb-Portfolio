@@ -5,6 +5,7 @@ import { HiOutlineDesktopComputer } from "react-icons/hi"
 import { MdSchool } from "react-icons/md"
 import { SiFreecodecamp } from "react-icons/si"
 import { TbFileCertificate, TbWorld } from "react-icons/tb"
+import { ExternalDivisionLink } from "../utils/next/anchor"
 import { Icon, IconProps } from "../utils/react/icon"
 import { useString } from "../utils/react/string"
 import { NavButton, OppositeTextButtonRounded } from "./button"
@@ -18,9 +19,11 @@ export function Card(props: IconProps & { label: string, link: string, buttonIco
         <Icon className="w-[100px] h-[100px]" />
         <div className="grow flex flex-col flex-center bg-white w-full rounded-b-xl">
             <div className="absolute top-[260px] p-1 rounded-full flex flex-center bg-white">
-                <OppositeTextButtonRounded>
-                    <ButtonIcon className="icon-md text-default" />
-                </OppositeTextButtonRounded>
+                <ExternalDivisionLink href={link}>
+                    <OppositeTextButtonRounded>
+                        <ButtonIcon className="icon-md text-default" />
+                    </OppositeTextButtonRounded>
+                </ExternalDivisionLink>
             </div>
             <div className="h-2" />
             <span className="p-md text-xs text-center">
@@ -53,29 +56,29 @@ export function Resume() {
 export function Experiences() {
 
     return <>
-        <Card icon={ProfilIcon} buttonIcon={AiOutlinePlus} label={"Add one by contacting me!"} link={""} />
-        <Card icon={AztecIcon} buttonIcon={TbWorld} label={"Front-End developer"} link={""} />
-        <Card icon={BrumeIcon} buttonIcon={FiGithub} label={"Brume Wallet Co-funder"} link={""} />
-        <Card icon={FreelanceIcon} buttonIcon={FiGithub} label={"Developer freelance"} link={""} />
+        <Card icon={ProfilIcon} buttonIcon={AiOutlinePlus} label={"Add one by contacting me!"} link={"mailto:victorpiamiaspro@outlook.fr?subject=Let's get to know each other"} />
+        <Card icon={AztecIcon} buttonIcon={TbWorld} label={"Front-End developer"} link={"https://aztec.network/"} />
+        <Card icon={BrumeIcon} buttonIcon={FiGithub} label={"Brume Wallet Co-funder"} link={"https://github.com/brume-wallet"} />
+        <Card icon={FreelanceIcon} buttonIcon={FiGithub} label={"Developer freelance"} link={"https://github.com/Piamias-Victor"} />
     </>
 }
 
 export function Projects() {
 
     return <>
-        <Card icon={LunarIcon} buttonIcon={FaMedal} label={"Lunar Wallet, ETHBrno"} link={""} />
-        <Card icon={ReachIcon} buttonIcon={FiGithub} label={"Reach3, NFT degree"} link={""} />
-        <Card icon={PongIcon} buttonIcon={FiGithub} label={"Pong.io, online Pong game"} link={""} />
-        <Card icon={SchoolIcon} buttonIcon={FiGithub} label={"42, Multiple projects"} link={""} />
+        <Card icon={LunarIcon} buttonIcon={FaMedal} label={"Lunar Wallet, ETHBrno"} link={"https://devfolio.co/projects/lunar-wallet-34c4"} />
+        <Card icon={ReachIcon} buttonIcon={FiGithub} label={"Reach3, NFT degree"} link={"https://github.com/Piamias-Victor/Reach3"} />
+        <Card icon={PongIcon} buttonIcon={FiGithub} label={"Pong.io, online Pong game"} link={"https://github.com/Piamias-Victor/transcendance"} />
+        <Card icon={SchoolIcon} buttonIcon={FiGithub} label={"42, Multiple projects"} link={"https://github.com/Piamias-Victor"} />
     </>
 }
 
 export function Educations() {
 
     return <>
-        <Card icon={SchoolIcon} buttonIcon={HiOutlineDesktopComputer} label={"42 School"} link={""} />
-        <Card icon={FaEthereum} buttonIcon={FaEthereum} label={"Crypto certification"} link={""} />
-        <Card icon={SiFreecodecamp} buttonIcon={SiFreecodecamp} label={"Free Code Camp"} link={""} />
-        <Card icon={MansIcon} buttonIcon={TbFileCertificate} label={"Bachelor's in Sales"} link={""} />
+        <Card icon={SchoolIcon} buttonIcon={HiOutlineDesktopComputer} label={"42 School"} link={"https://42.fr/en/homepage/"} />
+        <Card icon={FaEthereum} buttonIcon={FaEthereum} label={"Crypto certification"} link={"https://ethernaut.openzeppelin.com/"} />
+        <Card icon={SiFreecodecamp} buttonIcon={SiFreecodecamp} label={"Free Code Camp"} link={"https://www.freecodecamp.org/"} />
+        <Card icon={MansIcon} buttonIcon={TbFileCertificate} label={"Bachelor's in Sales"} link={"https://iut-laval.univ-lemans.fr/fr/departements/techniques-de-commercialisation.html"} />
     </>
 }

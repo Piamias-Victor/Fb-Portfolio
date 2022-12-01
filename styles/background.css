@@ -1,0 +1,25 @@
+@layer utilities {
+  .bg-default {
+    @apply bg-white;
+  }
+
+  .bg-contrast {
+    @apply bg-zinc-400;
+  }
+
+  .bg-component {
+    @apply bg-white bg-ahover;
+  }
+
+  .bg-solid {
+    @apply bg-zinc-600 ahover:bg-zinc-800;
+  }
+
+  .bg-ahover {
+    @apply ahover:bg-zinc-200;
+  }
+
+  .bg-backdrop {
+    @apply bg-neutral-500 bg-opacity-50;
+  }
+}

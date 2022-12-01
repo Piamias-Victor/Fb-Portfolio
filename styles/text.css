@@ -1,0 +1,17 @@
+@layer utilities {
+  .text-default {
+    @apply text-white;
+  }
+
+  .text-opposite {
+    @apply text-black;
+  }
+
+  .text-contrast {
+    @apply text-zinc-400;
+  }
+
+  .text-colored {
+    @apply text-blue-400;
+  }
+}

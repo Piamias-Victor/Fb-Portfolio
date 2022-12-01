@@ -1,16 +1,9 @@
+import { Presentation } from "../src/components/arenomer";
+import { Layout } from "../src/components/layout/layout";
 
 export default function Home() {
-  return <>
-    <div className="p-md bg-opposite text-default w-full">
-      Starter Pack
-    </div>
-    <div className="h-2" />
-    <div className="p-md border border-default">
-      Border
-    </div>
-    <div className="h-2" />
-    <div className="p-md border border-default bg-component">
-      BG
-    </div>
-  </>
+  return <Layout>
+    <div className="h-6" />
+    <Presentation />
+  </Layout>
 }

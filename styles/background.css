@@ -1,6 +1,6 @@
 @layer utilities {
   .bg-default {
-    @apply bg-white;
+    @apply bg-fb-default;
   }
 
   .bg-opposite {
@@ -8,19 +8,11 @@
   }
 
   .bg-contrast {
-    @apply bg-zinc-400;
-  }
-
-  .bg-component {
-    @apply bg-zinc-200 bg-ahover;
-  }
-
-  .bg-solid {
-    @apply bg-zinc-600 hover:bg-zinc-800;
+    @apply bg-fb-contrast;
   }
 
   .bg-ahover {
-    @apply hover:bg-zinc-400;
+    @apply hover:bg-fb-default;
   }
 
   .bg-backdrop {

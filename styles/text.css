@@ -1,6 +1,6 @@
 @layer utilities {
   .text-default {
-    @apply text-white;
+    @apply text-fb-default;
   }
 
   .text-opposite {
@@ -8,10 +8,14 @@
   }
 
   .text-contrast {
-    @apply text-zinc-400;
+    @apply text-fb-contrast;
+  }
+
+  .text-gray {
+    @apply text-fb-gray;
   }
 
   .text-colored {
-    @apply text-blue-400;
+    @apply text-fb-blue;
   }
 }

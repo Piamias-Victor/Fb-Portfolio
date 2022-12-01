@@ -77,9 +77,9 @@ export function NavButton(props: IconProps & { label: string, select: boolean, s
         return "text-gray"
     }, [select])
 
-    return <ContrastTextButton className={`flex flex-center gap-2 h-[70px] w-[200px] font-semibold ${color}`}
+    return <ContrastTextButton className={`flex flex-center gap-2 h-[50px] md:h-[70px] max-w-[200px] font-semibold ${color}`}
         onClick={() => section.set(label)}>
-        <Icon className="icon-md" />
-        <span>{label}</span>
+        <Icon className="hidden sm:block icon-sm md:icon-md" />
+        <span className="text-xs md:text-base">{label}</span>
     </ContrastTextButton>
 }

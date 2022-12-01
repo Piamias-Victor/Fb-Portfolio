@@ -8,7 +8,7 @@ export function Stack() {
 
     const deploy = useBoolean(true)
 
-    return <div className="w-full px-4">
+    return <div className="lg:w-full px-4">
         <div className="bg-white p-1 rounded-xl shadow-md">
             <OppositeTextButtonDeploy deploy={deploy}
                 onClick={deploy.toggle}>

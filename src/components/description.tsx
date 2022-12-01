@@ -4,7 +4,7 @@ import { ColoredTextButton } from "./button"
 
 export function Description() {
 
-    return <div className="bg-white p-4 rounded-xl w-[600px] shadow-md">
+    return <div className="bg-white p-4 rounded-xl max-w-[600px] shadow-md">
         <div className="p-md rounded-xl bg-contrast">
             <span className="text-sm text-break">
                 {`I'm Victor Piamias, a Front-End developer. I am curious, I love to learn and discover new technologies !

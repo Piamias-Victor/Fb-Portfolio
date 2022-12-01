@@ -1,3 +1,5 @@
+import { FaEthereum } from "react-icons/fa"
+import { SiFreecodecamp } from "react-icons/si"
 
 export function ProfilIcon() {
 
@@ -54,4 +56,14 @@ export function MansIcon() {
 
     return <img className="w-[100px] h-[100px]"
         src="/mans.png" alt="mans" />
+}
+
+export function FreeCodeCampIcon() {
+
+    return <SiFreecodecamp className="w-[100px] h-[100px]" />
+}
+
+export function EthereumIcon() {
+
+    return <FaEthereum className="w-[100px] h-[100px]" />
 }

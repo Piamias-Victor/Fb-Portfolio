@@ -12,10 +12,15 @@
   }
 
   .text-gray {
-    @apply text-fb-gray;
+    @apply text-fb-gray-dark;
   }
 
   .text-colored {
     @apply text-fb-blue;
+  }
+
+  .text-break {
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 }

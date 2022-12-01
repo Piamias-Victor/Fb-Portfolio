@@ -7,8 +7,16 @@
     @apply bg-black;
   }
 
+  .bg-colored {
+    @apply bg-fb-blue;
+  }
+
   .bg-contrast {
     @apply bg-fb-contrast;
+  }
+
+  .bg-gray {
+    @apply bg-fb-gray;
   }
 
   .bg-ahover {

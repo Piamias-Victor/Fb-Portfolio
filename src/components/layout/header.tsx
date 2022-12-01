@@ -24,7 +24,7 @@ export function Header() {
         <div className="w-[50px] lg:w-[200px] flex flex-row-reverse">
             <div className="rounded-full bg-gray flex flex-center">
                 <img className="icon-3xl"
-                    src="/memoji.png" alt="profil" />
+                    src="/Memoji.png" alt="profil" />
             </div>
         </div>
 

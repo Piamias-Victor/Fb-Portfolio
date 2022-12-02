@@ -1,7 +1,7 @@
 @layer utilities {
   .border-default {
     @apply border-fb-contrast;
-    @apply dark:border-0;
+    @apply dark:border-fb-gray;
   }
 
   .border-colored {

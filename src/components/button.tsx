@@ -54,7 +54,7 @@ export function OppositeTextButtonDeploy(props: ButtonProps & RefProps<HTMLButto
 
     const { xref, className, children, deploy, ...other } = props
 
-    return <button className={`w-full group flex items-center rounded-xl p-md border border-default bg-colored text-default transition-colors disabled:opacity-70 disabled:cursor-not-allowed ${className}`}
+    return <button className={`w-full group flex items-center rounded-xl p-md bg-colored text-default transition-colors disabled:opacity-70 disabled:cursor-not-allowed ${className}`}
         {...other}
         ref={xref}>
         <div className="flex grow justify-center items-center gap-2 group-enabled:group-active:scale-90 transition-transform">

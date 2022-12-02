@@ -4,13 +4,12 @@ import { ColoredTextButton } from "./button"
 
 export function Description() {
 
-    return <div className="bg-white p-4 rounded-xl max-w-[600px] shadow-md">
+    return <div className="bg-component p-4 rounded-xl max-w-[600px] shadow-md">
         <div className="p-md rounded-xl bg-contrast">
-            <span className="text-sm text-break">
+            <span className="text-sm">
                 {`I'm Victor Piamias, a Front-End developer. I am curious, I love to learn and discover new technologies !
-                I graduated from 42 school in Paris. With my teammates, we completed the course in 5 months, after that we worked as freelancers for different protocols in crypto.
-                My favorite technologies are the following : JS / TS / React / HTML / CSS.
-                I also had the opportunity to explore many technologies that I have not fully mastered yet but on which I can perform basic tasks or train to be independent on it : Rust / Web Assembly / Solidity / The Graph`}
+                I graduated from 42 school in Paris. With my teammates, we completed the course in 5 months, after that we worked as freelancers for different company and more recently mainly crypto companies.
+                I am currently looking for a position as a developer, I am completely autonomous on front-end missions (React / Js / Ts / HTML / CSS) but I also have a good foundation in back-end (Node js / GraphQl).`}
             </span>
         </div>
         <div className="h-4" />

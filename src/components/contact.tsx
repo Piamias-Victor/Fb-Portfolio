@@ -10,7 +10,7 @@ export function Contacts() {
     const deploy = useBoolean(true)
 
     return <div className="w-full px-4">
-        <div className="bg-white p-1 rounded-xl shadow-md">
+        <div className="bg-component p-1 rounded-xl shadow-md">
             <OppositeTextButtonDeploy deploy={deploy}
                 onClick={deploy.toggle}>
                 My Contacts

@@ -73,7 +73,7 @@ export function NavButton(props: IconProps & { label: string, select: boolean, s
     const { label, icon: Icon, select, section } = props
 
     const color = useMemo(() => {
-        if (select === true) return "text-colored"
+        if (select === true) return "text-colored dark:text-fb-blue"
         return "text-gray"
     }, [select])
 

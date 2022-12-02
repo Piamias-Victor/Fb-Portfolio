@@ -18,5 +18,5 @@ body,
 }
 
 body {
-  @apply bg-default text-opposite;
+  @apply bg-default text-opposite transition-colors;
 }

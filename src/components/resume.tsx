@@ -20,8 +20,8 @@ export function Card(props: IconProps & { label: string, link: string, buttonIco
     return <>
         <div className="flex flex-col flex-center h-[195px] max-w-[120px] rounded-xl border border-default bg-default shadow-sm">
             <Icon className="max-w-[100px] max-h-[100px]" />
-            <div className="grow flex flex-col flex-center bg-white w-full rounded-b-xl">
-                <div className="absolute top-[240px] md:top-[260px] p-1 rounded-full flex flex-center bg-white">
+            <div className="grow flex flex-col flex-center bg-component w-full rounded-b-xl">
+                <div className="absolute top-[240px] md:top-[260px] p-1 rounded-full flex flex-center bg-component">
                     <ExternalDivisionLink href={link}>
                         <OppositeTextButtonRounded>
                             <ButtonIcon className="icon-xs lg:icon-md text-default" />
@@ -42,7 +42,7 @@ export function Resume() {
 
     const section = useString("Experiences")
 
-    return <div className="bg-white rounded-xl min-h-[300px] shadow-md ">
+    return <div className="bg-component rounded-xl min-h-[300px] shadow-md ">
         <div className="flex flex-center md:gap-4 px-4 py-2">
             <NavButton label="Experiences" icon={FaSuitcase} select={section.current === "Experiences"} section={section} />
             <NavButton label="Projects" icon={FaCodepen} select={section.current === "Projects"} section={section} />
@@ -131,7 +131,7 @@ export function Educations() {
 
     return <>
         <div className="hidden sm:flex flex-center sm:gap-4">
-            <Card icon={SchoolIcon} buttonIcon={HiOutlineDesktopComputer} label={"42 School"} link={"https://42.fr/en/homepage/"} />
+            <Card icon={SchoolIcon} buttonIcon={HiOutlineDesktopComputer} label={"42 School, Paris"} link={"https://42.fr/en/homepage/"} />
             <Card icon={EthereumIcon} buttonIcon={FaEthereum} label={"Crypto certification"} link={"https://ethernaut.openzeppelin.com/"} />
             <Card icon={FreeCodeCampIcon} buttonIcon={SiFreecodecamp} label={"Free Code Camp"} link={"https://www.freecodecamp.org/"} />
             <Card icon={MansIcon} buttonIcon={TbFileCertificate} label={"Bachelor's in Sales"} link={"https://iut-laval.univ-lemans.fr/fr/departements/techniques-de-commercialisation.html"} />

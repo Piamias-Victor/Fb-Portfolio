@@ -1,10 +1,12 @@
 @layer utilities {
   .text-default {
     @apply text-fb-default;
+    @apply dark:text-white;
   }
 
   .text-opposite {
     @apply text-black;
+    @apply dark:text-white;
   }
 
   .text-contrast {
@@ -13,10 +15,12 @@
 
   .text-gray {
     @apply text-fb-gray-dark;
+    @apply dark:text-fb-gray;
   }
 
   .text-colored {
     @apply text-fb-blue;
+    @apply dark:text-fb-contrast;
   }
 
   .text-break {

@@ -1,6 +1,12 @@
 @layer utilities {
   .bg-default {
     @apply bg-fb-default;
+    @apply dark:bg-fb-default-dark;
+  }
+
+  .bg-component {
+    @apply bg-white transition-colors;
+    @apply dark:bg-fb-component-dark;
   }
 
   .bg-opposite {
@@ -13,13 +19,15 @@
 
   .bg-contrast {
     @apply bg-fb-contrast;
+    @apply dark:bg-fb-contrast-dark;
   }
 
   .bg-gray {
     @apply bg-fb-gray;
+    @apply dark:bg-fb-gray-dark;
   }
 
-  .bg-ahover {
+  .bg-hover {
     @apply hover:bg-fb-default;
   }
 
